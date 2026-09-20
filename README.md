@@ -15,9 +15,12 @@ This project is a Java 17 console application that demonstrates the practical im
 
 ##  Architecture & UML Diagram
 
-The diagram below illustrates the decoupled structure between client code, creational factories, and product interfaces.
-
-![UML Class Diagram](./docs/UML/uml_diagram.png)
+### 1. Factory Method Pattern UML (`transport` & `logistics` packages)
+Illustrates abstract creator `Logistics` delegating product instantiation (`Truck` / `Ship`) to concrete subclasses.
+![UML Class Diagram](./docs/UML/uml1.png)
+### 2. Abstract Factory Pattern UML (`gui` package)
+Illustrates platform-specific factories (`WindowsFactory`, `MacOSFactory`) producing families of cross-platform UI controls (`Button`, `Checkbox`).
+![UML Class Diagram](./docs/UML/uml2.png)
 
 ---
 
